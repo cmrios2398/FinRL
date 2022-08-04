@@ -89,7 +89,7 @@ class DRLAgent:
             raise NotImplementedError("NotImplementedError")
         agent = MODELS[model_name]
         environment.env_num = 1
-        args = Arguments(agent_class=agent, env=environment)
+        args = Arguments(agent=agent, env=environment)
         args.cwd = cwd
         args.net_dim = net_dimension
         # load agent
